@@ -1,0 +1,40 @@
+.wrapper{
+  display: flex;
+  height: 100vh;
+}
+
+.Side-bar{
+  width: 300px;
+  background-color: #253141;
+
+  .Left-header{
+    height: 100px;
+    background-color: #253141;
+  }
+
+  .Group-list{
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  }
+}
+
+.Chat-main{
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+
+  .Right-header{
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .Message-list{
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+  }
+
+  .Message-form{
+    height: 90px;
+    background-color: #d2d2d2;
+  }
+}
