@@ -1,0 +1,14 @@
+.Group-list{
+  padding: 0 20px;
+  .Group{
+    padding: 20px 0 40px;
+    color: #ffffff;
+    &__name{
+      font-size: 15px;
+    }
+    &__message{
+      font-size: 11px;
+      margin-top: 5px;
+    }
+  }
+}
