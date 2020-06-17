@@ -1,0 +1,26 @@
+.Message-list{
+  padding: 35px 40px 0 40px;
+  .Message-box{
+    margin: 0 0 46px;
+    .Message-info{
+      display: flex;
+      &__user-name{
+        color: #333333;
+        font-size: 16px;
+      }
+
+      &__date{
+        color: #999999;
+        font-size: 12px;
+        padding-left: 12px;
+      }
+    }
+    .Message{
+      margin: 12px 0 0;
+      &__content{
+        color: #434A54;
+        font-size: 14px;
+      }
+    }
+  }
+}
