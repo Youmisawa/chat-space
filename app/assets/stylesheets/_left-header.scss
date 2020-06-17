@@ -1,0 +1,30 @@
+.Left-header{
+
+  .Top-header{
+    height: 20px;
+    width: 260px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &__user-name{
+      color: #ffffff;
+      line-height: 20px;
+    }
+
+    &__icon-list{
+      width: 60px;
+      line-height: 20px;
+      display: flex;
+      justify-content: flex-end;
+      
+      .note{
+        color: #ffffff;
+        margin-right: 5px;
+      }
+      .gear{
+        color: #ffffff;
+      }
+    }
+  }
+}

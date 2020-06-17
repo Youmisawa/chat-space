@@ -1,3 +1,11 @@
 .Side-bar
   .Left-header
+    .Top-header
+      %p.Top-header__user-name
+        masa
+      .Top-header__icon-list
+        = link_to "#", class: "Top-header__icons" do
+          =icon('far', 'edit', class: 'note')
+        = link_to "#", class: "Top-header__icons" do
+          =icon('fas', 'cog', class: 'gear')
   .Group-list
