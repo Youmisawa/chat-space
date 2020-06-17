@@ -1,4 +1,13 @@
 .Chat-main
   .Right-header
+    .Header-group
+      .Header-group__group-name
+        test
+      %ul.Header-group__member-list
+        Member :
+        %li.Header-group__member-name
+          masa
+    = link_to "#", class: "Edit-btn" do
+      Edit
   .Message-list
   .Message-form
