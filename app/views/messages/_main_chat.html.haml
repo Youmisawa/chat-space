@@ -9,6 +9,7 @@
           masa
     = link_to "#", class: "Edit-btn" do
       Edit
+      
   .Message-list
     .Message-box
       .Message-info
@@ -19,6 +20,7 @@
       .Message
         %p.Message__content
           aiueo
+
     .Message-box
       .Message-info
         .Message-info__user-name
@@ -28,4 +30,13 @@
       .Message
         %p.Message__content
           今日は夜から雨
+
   .Message-form
+    .Forms
+      %form.Form
+        .input-box
+          %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file", class: "input-box__image__file"}
+        %input{type: "submit", value: "Send", class: "submit-btn"}

@@ -1,0 +1,40 @@
+.Message-form{
+  .Forms{
+    padding: 20px 40px;
+    .Form{
+      display: flex;
+      .input-box{
+        width: 100%;
+        display: flex;
+        position: relative;
+
+        &__text{
+          height: 50px;
+          width: 100%;
+          color: #434a54;
+          border-style: none;
+          padding: 0 40px 0 10px;
+        }
+
+        &__image{
+          font-size: 25px;
+          position: absolute;
+          right: 10px;
+          line-height: 50px;
+          &__file{
+            display: none;
+          }
+        }
+      }
+      .submit-btn{
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        border: none;
+      }
+    }
+  }
+}
