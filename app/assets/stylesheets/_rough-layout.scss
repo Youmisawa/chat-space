@@ -26,8 +26,11 @@
 
   .Right-header{
     height: 100px;
-    background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .Message-list{
