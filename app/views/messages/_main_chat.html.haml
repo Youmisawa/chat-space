@@ -1,17 +1,17 @@
 .Chat-main
   .Chat-main__right-header
-    .Header-group
-      .Header-group__group-name
+    .Right-header
+      .Right-header__group-name
         test
-      %ul.Header-group__member-list
+      %ul.Right-header__member-list
         Member :
-        %li.Header-group__member-name
+        %li.Right-header__member-name
           masa
     = link_to "#", class: "Edit-btn" do
       Edit
       
   .Chat-main__message-list
-    .Message-box
+    .Message-list
       .Message-info
         .Message-info__user-name
           masa
@@ -21,7 +21,7 @@
         %p.Message__content
           aiueo
     //メッセージ反復
-    .Message-box  
+    .Message-list
       .Message-info
         .Message-info__user-name
           masa
@@ -32,7 +32,7 @@
           今日は夜から雨
 
   .Chat-main__message-form
-    .Forms
+    .Message-form
       %form.Form
         .input-box
           %input{type: "text", class: "input-box__text", placeholder: "type a message"}
