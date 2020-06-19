@@ -1,21 +1,21 @@
 .Side-bar
   .Side-bar__left-header
-    .Top-header
-      %p.Top-header__user-name
+    .Left-header
+      %p.Left-header__user-name
         masa
-      .Top-header__icon-list
+      .Left-header__icon-list
         = link_to "#", class: "Top-header__icons" do
           =icon('far', 'edit', class: 'note')
         = link_to "#", class: "Top-header__icons" do
           =icon('fas', 'cog', class: 'gear')
   .Side-bar__group-list
-    .Group
-      .Group__name
+    .Group-list
+      .Group-list__name
         techcamp
-      .Group__message
+      .Group-list__message
         まだメッセージがありません
-    .Group
-      .Group__name
+    .Group-list
+      .Group-list__name
         test
-      .Group__message
+      .Group-list__message
         今日は夜から雨
