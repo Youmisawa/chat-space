@@ -2,11 +2,11 @@
   .Side-bar__left-header
     .Left-header
       %p.Left-header__user-name
-        masa
+        = current_user.name
       .Left-header__icon-list
         = link_to "#", class: "Top-header__icons" do
           =icon('far', 'edit', class: 'note')
-        = link_to "#", class: "Top-header__icons" do
+        = link_to edit_user_path(current_user), class: "Top-header__icons" do
           =icon('fas', 'cog', class: 'gear')
   .Side-bar__group-list
     .Group-list
