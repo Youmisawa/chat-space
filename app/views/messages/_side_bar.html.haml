@@ -4,7 +4,7 @@
       %p.Left-header__user-name
         = current_user.name
       .Left-header__icon-list
-        = link_to new_group_path(current_group), class: "Top-header__icons" do
+        = link_to new_group_path, class: "Top-header__icons" do
           =icon('far', 'edit', class: 'note')
         = link_to edit_user_path(current_user), class: "Top-header__icons" do
           =icon('fas', 'cog', class: 'gear')
