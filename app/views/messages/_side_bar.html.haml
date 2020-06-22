@@ -4,18 +4,15 @@
       %p.Left-header__user-name
         = current_user.name
       .Left-header__icon-list
-        = link_to "#", class: "Top-header__icons" do
+        = link_to new_group_path, class: "Top-header__icons" do
           =icon('far', 'edit', class: 'note')
         = link_to edit_user_path(current_user), class: "Top-header__icons" do
           =icon('fas', 'cog', class: 'gear')
   .Side-bar__group-list
-    .Group-list
-      .Group-list__name
-        techcamp
-      .Group-list__message
-        まだメッセージがありません
-    .Group-list
-      .Group-list__name
-        test
-      .Group-list__message
-        今日は夜から雨
+    - current_user.groups.each do |group|
+      .Group-list
+        = link_to '#' do
+          .Group-list__name
+            = group.name
+          .Group-list__message
+            メッセージはまだありません
