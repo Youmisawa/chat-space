@@ -12,31 +12,16 @@
       
   .Chat-main__message-list
     .Message-list
-      .Message-info
-        .Message-info__user-name
-          masa
-        .Message-info__date
-          2019/11/20(Wed) 17:43:01
-      .Message
-        %p.Message__content
-          aiueo
-    //メッセージ反復
-    .Message-list
-      .Message-info
-        .Message-info__user-name
-          masa
-        .Message-info__date
-          2019/11/20(Wed) 17:43:34
-      .Message
-        %p.Message__content
-          今日は夜から雨
+      = render @messages
+    
 
   .Chat-main__message-form
     .Message-form
-      %form.Form
-        .input-box
-          %input{type: "text", class: "input-box__text", placeholder: "type a message"}
-          %label{class: "input-box__image"}
-            = icon('fas', 'image')
-            %input{type: "file", class: "input-box__image__file"}
-        %input{type: "submit", value: "Send", class: "submit-btn"}
+      .Form
+        = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
+          .input-box
+            = f.text_field :body, class: "input-box__text", placeholder: "type a message"
+            = f.label :image, class: "input-box__image" do
+              = icon('fas', 'image')
+              = f.file_field :image, class: "input-box__image__file"
+          = f.submit 'Send', class: "submit-btn"
