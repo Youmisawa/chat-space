@@ -1,13 +1,14 @@
 .Side-bar__group-list{
   .Group-list{
     padding: 20px 0 40px;
-    color: #ffffff;
     &__name{
       font-size: 15px;
+      color: #ffffff;
     }
     &__message{
       font-size: 11px;
       margin-top: 5px;
+      color: #ffffff;
     }
   }
 }
