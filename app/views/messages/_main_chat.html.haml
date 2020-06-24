@@ -2,11 +2,12 @@
   .Chat-main__right-header
     .Right-header
       .Right-header__group-name
-        test
+        = @group.name
       %ul.Right-header__member-list
         Member :
         %li.Right-header__member-name
-          masa
+          - @group.users.each do |user|
+            = user.name
     = link_to "#", class: "Edit-btn" do
       Edit
       
