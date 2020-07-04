@@ -60,5 +60,8 @@ $(function () {
       $('.Chat-main__message-list').animate({ scrollTop: $('.Chat-main__message-list')[0].scrollHeight });
       $('form')[0].reset();
     })
+    .always(() => {
+      $(".submit-btn").removeAttr("disabled");
+    });
   });
 });
