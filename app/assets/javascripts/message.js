@@ -60,8 +60,11 @@ $(function () {
       $('.Chat-main__message-list').animate({ scrollTop: $('.Chat-main__message-list')[0].scrollHeight });
       $('form')[0].reset();
     })
+    .fail(function () {
+      alert("メッセージ送信に失敗しました");
+    })
     .always(() => {
       $(".submit-btn").removeAttr("disabled");
-    });
-  });
+    })
+  })
 });
