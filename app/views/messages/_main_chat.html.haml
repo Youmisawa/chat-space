@@ -18,7 +18,6 @@
 
   .Chat-main__message-form
     .Message-form
-      -# .Form
       = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
         .input-box
           = f.text_field :body, class: "input-box__text", placeholder: "type a message"
